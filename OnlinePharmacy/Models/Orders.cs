@@ -9,18 +9,19 @@ namespace OnlinePharmacy.Models
     {
         public Orders()
         {
-    
+
         }
 
         public int id { get; set; }
-        public int medInStoresId { get; set; }
+        public int MedcinesInDrugstoresId { get; set; }
         public int amount { get; set; }
         public string name { get; set; }
         public string tel { get; set; }
         public string email { get; set; }
         public DateTime date { get; set; }
 
-        public virtual MedcinesInDrugstores MedId { get; set; }
-        public virtual MedcinesInDrugstores StoreId { get; set; }
+        public virtual MedcinesInDrugstores MedcinesInDrugstores { get; set; }
+
+
     }
 }
