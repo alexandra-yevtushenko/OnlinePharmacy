@@ -16,7 +16,7 @@ namespace OnlinePharmacy.Models
         public string name { get; set; }
         public string country { get; set; }
         public bool prescription { get; set; }
-        public int price { get; set; }
+        public float price { get; set; }
 
         public virtual ICollection<MedcinesInDrugstores> MedcinesInDrugstores { get; set; }
     }

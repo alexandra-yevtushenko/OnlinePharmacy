@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using OnlinePharmacy.Models;
 
 namespace OnlinePharmacy.Models
 {
@@ -17,6 +18,8 @@ namespace OnlinePharmacy.Models
         {
             Database.EnsureCreated();
         }
+
+        public DbSet<OnlinePharmacy.Models.Deliverymans> Deliverymans { get; set; }
 
     }
 }
